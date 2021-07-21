@@ -8,6 +8,8 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
 .icon {
   font-family: "Material Icons", serif;
   font-style: normal;
@@ -33,7 +35,7 @@
   --text-color: rgb(75, 73, 73);
   --text-color-light: rgb(175, 173, 173);
   --border-color: rgb(199, 199, 199);
-  --bg-color: #f9f9f9;
+  --bg-color:white;
   --neutral-color: #fff;
 }
 
@@ -44,12 +46,12 @@
 }
 
 body {
-  font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-size: 1em;
-  font-weight: 300;
+  font-weight: 100;
   line-height: 1.5;
   color: var(--text-color);
-  background: var(--bg-color);
+  background: cornsilk;
 }
 
 header {
@@ -57,7 +59,8 @@ header {
   width: 100%;
   padding: 1.75em 0;
   border-bottom: 1px solid var(--border-color);
-  background: var(--neutral-color);
+  background: #ffeaea;
+  /*background:var(--neutral-color);*/
 }
 
 header #logo {
@@ -77,8 +80,8 @@ header #logo .icon {
 main {
   display: block;
   margin: 0 auto;
-  margin-top: 5em;
-  max-width: 50em;
+  margin-top: 1em;
+  max-width: 70em;
 }
 
 /* GRID */
@@ -125,51 +128,55 @@ main {
   width: 100%;
   background: var(--neutral-color);
   border: 1px solid var(--border-color);
+  margin-bottom: 20px;
 }
 
-.calendar .header {
+.calendar_header {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 115%;
   padding: 1.5em 0;
   border-bottom: 1px solid var(--border-color);
+  
+  
 }
 
-.calendar .header .icon {
+.calendar_header .icon {
   cursor: pointer;
   transition: 0.15s ease-out;
 }
 
-.calendar .header .icon:hover {
+.calendar_header .icon:hover {
   transform: scale(1.75);
   transition: 0.25s ease-out;
   color: var(--main-color);
 }
 
-.calendar .header .icon:first-of-type {
+.calendar_header .icon:first-of-type {
   margin-left: 1em;
 }
 
-.calendar .header .icon:last-of-type {
+.calendar_header .icon:last-of-type {
   margin-right: 1em;
 }
 
-.calendar .days {
+.calendar_days {
   text-transform: uppercase;
-  font-weight: 400;
-  color: var(--text-color-light);
-  font-size: 70%;
+  font-weight: 500;
+  
+  font-size: 80%;
   padding: 0.75em 0;
   border-bottom: 1px solid var(--border-color);
 }
 
 .calendar .body .cell {
   position: relative;
-  height: 15em;
+  font-size: 1.5em;
+  height: 13em;
   border-right: 1px solid var(--border-color);
   overflow: hidden;
   cursor: pointer;
-  background: var(--neutral-color);
+  background:cornsilk;
   transition: 0.25s ease-out;
 }
 
@@ -245,5 +252,70 @@ main {
 .rating{
   
   text-align: center;
+  font-size: .7em;
+  
+}
+
+
+/* card carousel */
+.card-carousel {
+  position: relative;
+  margin: 0 auto 0 auto;
+  padding: 0;
+  
+  width: 700px;
+  height: 500px;
+  perspective: 2000px;
+  perspective-origin: top;
+}
+  
+    
+  .inner-carousel {
+    position: relative;
+    width: 600px;
+    
+    margin: 0 auto;
+    top: 80px;
+    background-color: #141313e3;
+  }
+    
+  .swiper-slide {
+    
+    width: 500px;
+    border-radius: 3%;
+    background-color: cornsilk;
+    padding: 3px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+    
+  }
+
+  .slider-card{
+    font-size: 1.5em;
+  }
+  
+  
+  .slider-card-img {
+    object-fit: contain;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  
+  /* width */
+::-webkit-scrollbar {
+  width: 10px;
+  
+}
+
+
+/*scrolling Handle */
+
+::-webkit-scrollbar-thumb {
+  background: rgb(175, 173, 173); 
+  border-radius: 10px;
+
   
 }

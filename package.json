@@ -7,7 +7,9 @@
     "framer-motion": "^4.1.13",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
-    "react-scripts": "1.1.4"
+    "react-infinite-scroller": "^1.2.4",
+    "react-scripts": "1.1.4",
+    "swiper": "^6.7.5"
   },
   "scripts": {
     "start": "react-scripts start",
