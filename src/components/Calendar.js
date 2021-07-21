@@ -3,7 +3,7 @@ import React,{useState,useEffect} from "react";
 import {motion,useCycle} from 'framer-motion'
 
 import dateFns, { setDay } from "date-fns";
-import InfiniteScroll from 'react-infinite-scroller'
+
 
 
 // Import Swiper React components
